@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ET7NLMNWW6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ET7NLMNWW6');
+</script>
+    <meta charset="UTF-8">
+    <title>Resume | Lingyu Zhao</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head> 
+<body>
+    <div class="skip"><a href="#main-to-skip">Skip to Main Content</a></div>
+    <header>
+        <div class="container">
+            <div class="name">
+                <h1 class="logo">Lingyu Zhao</h1>
+            </div>
+            <nav class="nav">   
+                <ul>
+                    <li><a href="portfolio.html">Works</a></li>
+                    <li><a href="resume.html"style="background-color:#796977; color: white; padding: 10px;">Resume</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Photos.html">Photos</a></li>
+                    <li><a href="buss_cards/qrcard.html">Business Card</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="content">
+        <div class="main" id="main">
+            <h2 class="page-title">Resume</h2><br>
+            <br>
+            <h3><b>EDUCATION</b></h3>
+            <br>
+
+            <p>University of Michigan, Ann Arbor
+                <br>
+            Master of Science in Information, UX Design Major
+                <br>
+                GPA: 4.0 / 4.0
+                <br>
+                Course Highlight: Intro to interactive design, Design for Computer Websites
+            </p>
+
+            <p>Indiana University, Bloomington
+                <br>
+                Bachelor of Science in Public Affairs, HR Management Major
+                <br>
+                GPA: 3.5 / 4.0
+                <br>
+                    Honors: Dean’s list
+            </p>
+
+            <h3><b>PROJECT EXPERIENCE</b></h3>
+            <br>
+
+            <p>Backyard App Design
+            <ul>
+                <li>- Constructed the local shopping app design and identified user flow roadmap</li>
+                <li>- Developed app design functions across key words search, order placement, and user community</li>
+                <li>- Led a team of 4 and optimized user flow structure; brainstormed user segmentation and development strategies</li>
+            </ul>
+            </p>
+
+            <p>Michigan Medicine Consulting Project
+                <ul>
+                    <li>- Performed in-depth analysis on the Michigan Medicine onboarding process and drafted research paper</li>
+                    <li>- Optimized the MLearning platform for the Health Information Technology and Service department</li>
+                    <li>- Conducted 6 UX interviews and drafted UX design report; delivered design strategies via MS-PowerPoint</li>
+                </ul>
+                </p>
+
+        </div>
+        <div id="contact">
+            <h2>Contact me</h2>
+            <p>Base: Ann Arbor, MI</p>
+            <p>Tel: 812-955-1450</p>
+            <p>Email: lingyuz@umich.edu</p>
+            <p>Github: <a href="https://github.com/lingyuz">https://github.com/lingyuz</a></p>
+            <form id="contact-form">
+              <!-- <input type="hidden" name="contact_number"> -->
+              <label>S U B J E C T</label>
+              <input type="text" name="subject" id="subject" required>
+              <label>E M A I L</label>
+              <input type="email" name="user_email" id="email" required>
+              <label>M E S S A G E</label>
+              <input name="message" id="message" required>
+              <input id="submit" type="submit" value="Send" required>
+            </form>
+          </div>
+    </div> <!--ends content div-->
+
+    <script type="text/javascript">
+        var button = document.querySelector("#submit")
+        button.click(function() {
+            document.querySelector('#contact-form').attr('action',
+                        'mailto:lingyuz@umich.edu?subject=' +
+                        document.querySelector('#subject').val() + '&body=' + document.querySelector('#message').val());
+                        document.querySelector('#contact-form').submit();
+            print("Email Sent.")
+        });
+
+    </script>
+
+
+    <footer>
+        &copy;2021 Lingyu Zhao
+    </footer>
+
+
+
+</body>
+
+
+
+
+
+
+</html>
