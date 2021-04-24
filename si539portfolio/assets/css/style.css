@@ -1,0 +1,402 @@
+html{
+    position: relative;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    background-color: #eee9ed;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+@media (max-width: 700px) {
+    .row,  .navbar {
+      flex-direction: column;
+    }
+  }
+
+@media screen and (min-width:700px) and (max-width:1200px){
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #796977;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1em;
+}
+
+
+/******************
+LAYOUT
+********************/
+
+
+
+header{
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #cccccc;
+    background-color: #ffffff;
+}
+
+header .container{
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50px 200px 500px 50px;
+    grid-template-rows: 50px 20px 20px 50px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-left{
+    flex: 50%;
+}
+
+.flex-item-right{
+    flex: 50%;
+}
+
+.name, .nav{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding:0;
+}
+
+.name {
+    width: 50%;
+}
+
+.logo{
+    display: inline-block;
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: 0.04em;
+	background-color: #796977;
+	color: #ffffff;
+	padding: 1em;
+    width: auto;
+    grid-column: 1/3;
+    grid-row: 1/5;
+}
+
+.nav{
+    /* width: 49%; */
+    text-align: right;
+    color: #4b4b4b;
+    font-weight: normal;
+    grid-column: 2/4;
+    grid-row: 2/5;
+
+}
+
+.nav ul li{
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    margin-left: 1em;
+
+}
+.nav ul li a{
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+.nav ul li a:hover{
+    color: #ffffff;
+    background: #796977;
+    padding: 5px;
+    transition: .5s;
+}
+
+.nav ul li a.active{
+    color: black;
+}
+.nav ul li a.focus{
+    color: black;
+}
+
+.nav ul li+li{
+    border-left: 1px solid #cccccc;
+}
+
+
+/********************
+MAIN BOX CONTENT
+********************/
+
+.content{
+    width: 960px;
+    clear: both; 
+    margin: 0 auto 6em auto;
+}
+
+.main{
+    display: inline-block;
+    width: 570px;
+	margin: 70px 0;
+	padding: 40px;
+	background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.main h2 {
+	font-size: 2em;
+	font-weight: bold;
+	padding-bottom: 1em;
+	margin-bottom: 0.8em;
+	border-bottom: 2px solid #dddddd;
+}
+
+.main p {
+	font-size: 16px;
+	line-height: 1.75em;
+	margin-bottom: 2em;
+}
+
+img.about-photo {
+	float: left;
+	padding: 0 1em 1em 0;
+	width: 100%;
+	height: 200px;
+}
+
+
+/***********************
+Portfolio Page
+***********************/
+.image-port{
+    width: 540px;
+    height: 400px;
+}
+
+
+.portfolio-item{
+    display: inline-block;
+    position: relative;
+    width: 540px;
+    height: 400px;
+    transition: transform .2 ease-out;
+}
+
+/* .portfolio-item:nth-child(even){
+    margin-left: 25px;
+} */
+
+.item-name{
+    position: relative;
+    top: -75px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1em;
+    color: #a0939e;
+    z-index: 900;
+}
+
+
+footer {
+    position: fixed;
+	left: 0;
+	bottom: 0;
+    width: 100%;
+	padding: 1em;
+	text-align: center;
+	font-size: 0.8em;
+	color: #ffffff;
+	background-color: #a9a9a9;
+    border-top: 7px solid #d0c5ce;
+}
+
+
+::placeholder {
+    color: #cccccc;
+  }
+
+  .skip a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 100;
+  
+    /*Your code here*/
+    position: absolute;
+    top: -40px;
+  }
+  
+  .skip a:focus {
+    position: absolute;
+    top: 0px;
+  }
+
+
+#contact h2{
+    height: 50px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+#contact p{
+    height: 50px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+#contact-form {
+    width: 100%;
+    height: 255px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top:30px;
+}
+
+#submit {
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#submit:hover {
+    background: #66ccff;
+    color: #fff;
+    border: 2px solid #66ccff;
+}
+
+input {
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid #aaa;
+}
+
+input:focus {
+    border-bottom: 2px solid #66ccff;
+}
+label{
+    color:rgb(0, 0, 0);
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #796977;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.logo{
+    /*Your code here.*/
+   animation-name: logo_grow;
+   animation-duration: 5s;
+}
+ 
+ /*Keyframes for animation*/
+ @-webkit-keyframes logo_grow{
+   /*Your code here.*/
+   from {width: 25px; opacity: 0;}
+   to {width: 150px; opacity: 1;}
+ }
+ 
+ @keyframes logo_grow{
+   /*Your code here.*/
+   from {width: 25px; opacity: 0;}
+   to {width: 150px; opacity: 1;}
+ } 
+
+ @media (prefers-reduced-motion: reduce) {
+    .logo {
+      animation: none;
+    }
+  }
+
+  .content {
+    /* The image used */
+    background-image: url("../../imgs/about/4d357bdd5m00836bd862e591daff3c89.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
+  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1200px) {
+    .content {
+      background-attachment: scroll;
+    }
+  }
