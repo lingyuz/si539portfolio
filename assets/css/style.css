@@ -4,7 +4,7 @@ html{
 
 html, body{
     font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
+    color: #000000;
     background-color: #eee9ed;
     background-repeat:no-repeat;
     background-size: 100% 100%;
@@ -204,7 +204,7 @@ Portfolio Page
     text-align: center;
     background-color: #ffffff;
     padding: 1em;
-    color: #a0939e;
+    color: #000000;
     z-index: 900;
 }
 
@@ -218,8 +218,8 @@ footer {
 	text-align: center;
 	font-size: 0.8em;
 	color: #ffffff;
-	background-color: #a9a9a9;
-    border-top: 7px solid #d0c5ce;
+	background-color: #796977;
+    border-top: 7px solid #796977;
 }
 
 
